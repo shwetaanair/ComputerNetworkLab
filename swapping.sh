@@ -1,11 +1,10 @@
-echo "enter the number"
+echo "Enter first number:"
 read a
-echo "enter the second number"
+echo "Enter second number:"
 read b
-echo "a before swapping:$a"
-echo "b before swapping :$b"
-a=$((a+b))
-b=$((a-b))
-a=$((a-b))
-echo "a after swapping:$a"
-echo "b after swapping :$b"
+temp=$a
+a=$b
+b=$temp
+
+echo "First number after swapping $a"
+echo "Second number after swapping $b"
